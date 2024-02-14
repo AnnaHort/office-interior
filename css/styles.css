@@ -421,7 +421,7 @@ button {
 .proposition-img-container {
 	padding: 0 20px;
 	height: 418px;
-	background-image: url("/images/proposition/proposition-1x.png");
+	background-image: url("../images/proposition/proposition-1x.png");
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
