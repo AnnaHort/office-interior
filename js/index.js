@@ -1,29 +1,23 @@
+new Swiper(".swiper", {
+	loop: true,
 
-new Swiper('.swiper', {
-    loop: true,
-    // Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+	// включення/відключення перемикання слайду захватом картинки на пк
+	simulateTouch: true,
 
-    // navigation: {
-    //   nextEl: ".next",
-    //   prevEl: ".prev"
-    // },
-        // включення/відключення перемикання слайду захватом картинки на пк
-  simulateTouch: true,
+	// чутливість свайпу
+	touchRatio: 1,
 
-  // чутливість свайпу
-  touchRatio: 1,
+	// кут зпрацьовування свайпу/перетягування
+	touchAngle: 45,
 
-  // кут зпрацьовування свайпу/перетягування
-  touchAngle: 45,
+	// курсор перетягування
+	grabCursor: true,
 
-  // курсор перетягування
-  grabCursor: true,
-
-  // перемикання при кліку на слайд
-slideToClickedSlide: true,
-  });
+	// перемикання при кліку на слайд
+	slideToClickedSlide: true,
+});

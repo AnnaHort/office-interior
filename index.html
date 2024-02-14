@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<section class="information-panel">
+		<section class="information-panel container">
 			<p class="information-panel-text">Gratis bezorging & montage vanaf € 275,- in Nederland & Belgie</p>
 			<div class="information-panel-rating">
 				<ul class="information-panel-list">
@@ -50,41 +50,39 @@
 			</div>
 		</section>
 		<header class="header">
-			<div class="nav-container">
-				<nav class="navigation">
-					<a href="#" class="nav-logo">OFFICE-INTERIOR</a>
-					<ul class="nav-list">
-						<li class="nav-list-item">
-							<svg class="nav-list-svg" width="24" height="24">
-								<use href="./images/sprite.svg#search"></use>
-							</svg>
-						</li>
-						<li class="nav-list-item">
-							<svg class="nav-list-svg" width="24" height="24">
-								<use href="./images/sprite.svg#heart"></use>
-							</svg>
-						</li>
-						<li class="nav-list-item">
-							<svg class="nav-list-svg" width="24" height="24">
-								<use href="./images/sprite.svg#barket"></use>
-							</svg>
-						</li>
-						<li class="nav-list-item">
-							<svg class="nav-list-svg" width="24" height="24">
-								<use href="./images/sprite.svg#user"></use>
-							</svg>
-						</li>
-						<li class="nav-list-item">
-							<svg class="nav-list-svg" width="24" height="24">
-								<use href="./images/sprite.svg#burger"></use>
-							</svg>
-						</li>
-					</ul>
-				</nav>
-			</div>
+			<nav class="navigation container">
+				<a href="#" class="nav-logo">OFFICE-INTERIOR</a>
+				<ul class="nav-list">
+					<li class="nav-list-item">
+						<svg class="nav-list-svg" width="24" height="24">
+							<use href="./images/sprite.svg#search"></use>
+						</svg>
+					</li>
+					<li class="nav-list-item">
+						<svg class="nav-list-svg" width="24" height="24">
+							<use href="./images/sprite.svg#heart"></use>
+						</svg>
+					</li>
+					<li class="nav-list-item">
+						<svg class="nav-list-svg" width="24" height="24">
+							<use href="./images/sprite.svg#basket"></use>
+						</svg>
+					</li>
+					<li class="nav-list-item">
+						<svg class="nav-list-svg" width="24" height="24">
+							<use href="./images/sprite.svg#user"></use>
+						</svg>
+					</li>
+					<li class="nav-list-item">
+						<svg class="nav-list-svg" width="24" height="24">
+							<use href="./images/sprite.svg#burger"></use>
+						</svg>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero container">
 				<p class="hero-furniture-description">Homepagina / Bureaus / Fuse</p>
 				<!-- Slider main container -->
 				<div class="swiper">
@@ -107,7 +105,6 @@
 								<img src="./images/furniture/table-1x.png" alt="bureaus" class="furniture-picture" />
 							</picture>
 						</div>
-
 					</div>
 
 					<!-- If we need navigation buttons -->
@@ -118,24 +115,59 @@
 				<div class="hero-filter-furniture">
 					<h2 class="hero-title">Elektrisch zit-sta bureau Fuse</h2>
 					<ul class="hero-furniture-color-list">
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-1.png" alt="product color 1" class="hero-furniture-img"
-						/></li>
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-2.png" alt="product color 2" class="hero-furniture-img"
-						/></li>
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-3.png" alt="product color 3" class="hero-furniture-img"
-						/></li>
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-4.png" alt="product color 4" class="hero-furniture-img"
-						/></li>
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-5.png" alt="product color 5" class="hero-furniture-img"
-						/></li>
-						<li class="hero-furniture-color-list-item"
-							><img src="./images/product-color/product-color-6.png" alt="product color 6" class="hero-furniture-img"
-						/></li>
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-btn">
+								<img
+									src="./images/product-color/product-color-1.png"
+									alt="product color 1"
+									class="hero-furniture-img"
+								/>
+							</button>
+						</li>
+
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-btn">
+								<img
+									src="./images/product-color/product-color-2.png"
+									alt="product color 2"
+									class="hero-furniture-img"
+								/>
+							</button>
+						</li>
+
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-btn">
+								<img
+									src="./images/product-color/product-color-3.png"
+									alt="product color 3"
+									class="hero-furniture-img"
+								/>
+							</button>
+						</li>
+
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-btn">
+								<img
+									src="./images/product-color/product-color-4.png"
+									alt="product color 4"
+									class="hero-furniture-img"
+								/>
+							</button>
+						</li>
+
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-white"></button>
+						</li>
+
+						<li class="hero-furniture-color-list-item">
+							<button class="hero-furniture-color-list-item-btn">
+								<img
+									src="./images/product-color/product-color-6.png"
+									alt="product color 6"
+									class="hero-furniture-img"
+								/>
+							</button>
+						</li>
 					</ul>
 
 					<div class="filter-afmeting">
@@ -181,7 +213,7 @@
 					<div class="basket-container">
 						<button class="basket-btn">
 							<svg class="basket-btn-svg" width="24" height="24">
-								<use href="./images/sprite.svg#barket"></use>
+								<use href="./images/sprite.svg#basket"></use>
 							</svg>
 							<p class="basket-btn-text">In winkelwagen</p>
 						</button>
@@ -227,7 +259,7 @@
 				</div>
 			</section>
 
-			<section class="beschrijving-section">
+			<section class="beschrijving-section container">
 				<div class="beschrijving-container">
 					<h3 class="beschrijving-title">Beschrijving</h3>
 					<p class="beschrijving-text"
@@ -239,7 +271,7 @@
 				</div>
 			</section>
 
-			<section class="eigenschappen-section">
+			<section class="eigenschappen-section container">
 				<div class="eigenschappen-container">
 					<h3 class="eigenschappen-title">Eigenschappen</h3>
 					<ul class="eigenschappen-list">
@@ -303,7 +335,7 @@
 				</div>
 			</section>
 
-			<section class="proposition-section">
+			<section class="proposition-section container">
 				<div class="proposition-div">
 					<div class="proposition-img-container">
 						<p class="proposition-introduction-text">Introductie</p>
@@ -317,9 +349,7 @@
 					>
 
 					<picture>
-						<source
-							srcset="./images/proposition/chair-1x.jpg 1x, ./images/proposition/chair-2x.jpg 2x"
-						/>
+						<source srcset="./images/proposition/chair-1x.jpg 1x, ./images/proposition/chair-2x.jpg 2x" />
 						<img src="./images/proposition/chair-1x.jpg" alt="office chairs" class="proposition-img" />
 					</picture>
 
@@ -333,7 +363,7 @@
 				</div>
 			</section>
 
-			<section class="advertising-section">
+			<section class="advertising-section container">
 				<div class="advertising-container">
 					<h3 class="advertising-title">Een tafel voor elke smaak</h3>
 					<p class="advertising-text"
@@ -343,9 +373,246 @@
 					<p class="advertising-text"> Veeg naar links/rechts om tabbladen te vergelijken</p>
 				</div>
 			</section>
+
+			<section class="offerte container">
+				<div class="offerte-container">
+					<svg class="offerte-container-svg" width="48" height="48">
+						<use href="./images/sprite.svg#info"></use>
+					</svg>
+					<h3 class="offerte-container-title">Informatie of een offerte op maat</h3>
+					<p class="offerte-container-text"
+						>Wilt u informatie over de tafel of de prijs voor uw organisatie? Laat je gegevens achter en onze manager
+						belt je terug. We helpen je graag verder.</p
+					>
+					<button class="offerte-container-btn">Verzoek achterlaten</button>
+				</div>
+
+				<ul class="offerte-list">
+					<li class="offerte-list-item-car">
+						<svg class="offerte-list-item-svg" width="48" height="48">
+							<use href="./images/sprite.svg#big-car"></use>
+						</svg>
+						<h3 class="offerte-list-item-title">Snelle levering</h3>
+						<p class="offerte-list-item-text"
+							>Uw bestelling wordt binnen 5 werkdagen bezorgd door één van onze vaste eigen chauffeurs. Wel zo
+							prettig!</p
+						>
+					</li>
+
+					<li class="offerte-list-item-box">
+						<svg class="offerte-list-item-svg" width="48" height="48">
+							<use href="./images/sprite.svg#big-box"></use>
+						</svg>
+						<h3 class="offerte-list-item-title">Design & Ergonomie</h3>
+						<p class="offerte-list-item-text"
+							>Makkelijke toepassingen, geweldige gebruikerservaring en een modern design staan centraal in onze
+							productontwikkelingen.</p
+						>
+					</li>
+
+					<li class="offerte-list-item-protection">
+						<svg class="offerte-list-item-svg" width="48" height="48">
+							<use href="./images/sprite.svg#big-protection"></use>
+						</svg>
+						<h3 class="offerte-list-item-title">3 jaar garantie</h3>
+						<p class="offerte-list-item-text"
+							>Wij zijn overtuigd van de kwaliteit die we leveren, daarom kunt u een garantieperiode van minimaal 3 jaar
+							van ons verwachten.</p
+						>
+					</li>
+				</ul>
+			</section>
+
+			<section class="partners">
+				<h3 class="partners-title">Onze klanten</h3>
+				<!-- Slider main container -->
+				<div class="swiper-partners">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide partners-slide">
+							<picture>
+								<source srcset="./images/partners/kadaster-1x.jpg 1x, ./images/partners/kadaster-2x.jpg 2x" />
+								<img src="./images/partners/kadaster-1x.jpg" alt="kadaster company" class="our-partners-img" />
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/katoen-1x.jpg 1x, ./images/partners/katoen-2x.jpg 2x" />
+								<img src="./images/partners/katoen-1x.jpg" alt="katoen company" class="our-partners-img" />
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/rogelli-1x.jpg 1x, ./images/partners/rogelli-2x.jpg 2x" />
+								<img src="./images/partners/rogelli-1x.jpg" alt="rogelli company" class="our-partners-img" />
+							</picture>
+						</div>
+
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/channel-1x.jpg 1x, ./images/partners/channel-2x.jpg 2x" />
+								<img src="./images/partners/channel-1x.jpg" alt="channel company" class="our-partners-img-channel" />
+							</picture>
+						</div>
+
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/bigfood-1x.jpg 1x, ./images/partners/bigfood-2x.jpg 2x" />
+								<img src="./images/partners/bigfood-1x.jpg" alt="bigfood company" class="our-partners-img" />
+							</picture>
+						</div>
+
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/signapore-1x.jpg 1x, ./images/partners/signapore-2x.jpg 2x" />
+								<img src="./images/partners/signapore-1x.jpg" alt="signapore company" class="our-partners-img" />
+							</picture>
+						</div>
+
+						<div class="swiper-slide">
+							<picture>
+								<source srcset="./images/partners/shv-1x.jpg 1x, ./images/partners/shv-2x.jpg 2x" />
+								<img src="./images/partners/shv-1x.jpg" alt="shv company" class="our-partners-img" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about-us container">
+				<h3 class="about-us-title">OFFICE-INTERIOR</h3>
+
+				<div class="about-us-info-container">
+					<h4 class="about-us-info-title">Niewsbrief</h4>
+					<p class="about-us-info-text"
+						>Schrijf u nu in voor de nieuwsbrief voor exclusieve informatie die u niet wil missen!</p
+					>
+		
+						<div class="about-us-input-container">
+							<input type="text" class="about-us-info-mail" placeholder="Enter your email" />
+							<button class="about-us-info-mail-btn">
+								<svg class="about-us-info-mail-svg" width="32" height="32">
+									<use href="./images/sprite.svg#send-mail-arrow"></use>
+								</svg>
+							</button>
+						</div>
+				
+				</div>
+
+				<ul class="category-list">
+					<li class="category-list-item">
+						<p class="category-list-item-text">Categorieën</p>
+						<svg class="category-list-item-svg" width="12" height="7">
+							<use href="./images/sprite.svg#arrow-acordeon"></use>
+						</svg>
+					</li>
+					<li class="category-list-item">
+						<p class="category-list-item-text">Over</p>
+						<svg class="category-list-item-svg" width="12" height="7">
+							<use href="./images/sprite.svg#arrow-acordeon"></use>
+						</svg>
+					</li>
+					<li class="category-list-item">
+						<p class="category-list-item-text">Info</p>
+						<svg class="category-list-item-svg" width="12" height="7">
+							<use href="./images/sprite.svg#arrow-acordeon"></use>
+						</svg>
+					</li>
+				</ul>
+
+				<ul class="contacts-list">
+					<li class="contacts-list-item">
+						<svg class="contacts-list-item-svg" width="22" height="22">
+							<use href="./images/sprite.svg#phone"></use>
+						</svg>
+						<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
+					</li>
+					<li class="contacts-list-item">
+						<svg class="contacts-list-item-svg" width="24" height="24">
+							<use href="./images/sprite.svg#letter"></use>
+						</svg>
+						<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
+
+					</li>
+					<li class="contacts-list-item">
+						<svg class="contacts-list-item-svg" width="24" height="24">
+							<use href="./images/sprite.svg#map"></use>
+						</svg>
+						<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
+					</li>
+				</ul>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer container">
+			<ul class="social-media-list">
+				<li class="social-media-list-el">
+					<svg class="social-media-list-svg" width="24" height="24">
+						<use href="./images/sprite.svg#instagram"></use>
+					</svg>
+				</li>
+				<li class="social-media-list-el">
+					<svg class="social-media-list-svg" width="24" height="24">
+						<use href="./images/sprite.svg#facebook"></use>
+					</svg>
+				</li>
+				<li class="social-media-list-el">
+					<svg class="social-media-list-svg" width="24" height="24">
+						<use href="./images/sprite.svg#twitter"></use>
+					</svg>
+				</li>
+			</ul>
+
+			<ul class="pay-list">
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/amex-1x.jpg 1x, ./images/payment/amex-2x.jpg 2x" />
+						<img src="./images/payment/amex-1x.jpg" alt="amex payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/ideal-1x.jpg 1x, ./images/payment/ideal-2x.jpg 2x" />
+						<img src="./images/payment/ideal-1x.jpg" alt="ideal payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/master-1x.jpg 1x, ./images/payment/master-2x.jpg 2x" />
+						<img src="./images/payment/master-1x.jpg" alt="master payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/mastercard-1x.jpg 1x, ./images/payment/mastercard-2x.jpg 2x" />
+						<img src="./images/payment/mastercard-1x.jpg" alt="mastercard payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/paypal-1x.jpg 1x, ./images/payment/paypal-2x.jpg 2x" />
+						<img src="./images/payment/paypal-1x.jpg" alt="paypal payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/unionpay-1x.jpg 1x, ./images/payment/unionpay-2x.jpg 2x" />
+						<img src="./images/payment/unionpay-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+				<li class="pay-list-item">
+					<picture class="pay-list-item-picture">
+						<sourse srcset="./images/payment/visa-1x.jpg 1x, ./images/payment/visa-2x.jpg 2x" />
+						<img src="./images/payment/visa-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
+					</picture>
+				</li>
+			</ul>
+
+			<p class="pay-list-text">&copy; <span class="copyright-year">2023</span> Office-Interior</p>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script type="module" src="js/swiper-partners.js"></script>
+
 		<script type="module" src="js/index.js"></script>
 	</body>
 </html>
