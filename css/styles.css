@@ -29,7 +29,7 @@
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 h1,
@@ -144,12 +144,10 @@ button {
 }
 
 .nav-list-item {
-
 }
 
-.nav-list-item-language{
+.nav-list-item-language {
 	display: none;
-
 }
 
 .nav-list-btn {
@@ -166,7 +164,7 @@ button {
 	line-height: 100%;
 	color: var(--color-primary-black);
 }
-.hero-furniture-description-span{
+.hero-furniture-description-span {
 	display: none;
 }
 /* swiper */
@@ -516,7 +514,8 @@ button {
 	gap: 28px;
 	margin-bottom: 41px;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+	background-position: center center;
 	border-radius: 10px;
 }
 .proposition-introduction-text {
@@ -630,7 +629,7 @@ button {
 	background-position: right bottom;
 	background-size: 184px 258px;
 	border-radius: 12px;
-	margin-bottom: 24px;
+	/* margin-bottom: 24px; */
 }
 .offerte-container-svg {
 	margin-bottom: 24px;
@@ -641,6 +640,7 @@ button {
 	font-size: 32px;
 	line-height: 100%;
 	margin-bottom: 14px;
+	max-width: 507px;
 }
 .offerte-container-text {
 	font-family: "Avenir Next Regular";
@@ -672,19 +672,21 @@ button {
 	background: #fffad9;
 	padding: 24px 28px;
 	border-radius: 12px;
-	height: 242px;
+	height: 290px;
 }
 .offerte-list-item-box {
 	background: #dbece0;
 	padding: 24px 28px;
 	border-radius: 12px;
-	height: 242px;
+	height: 290px;
+
 }
 .offerte-list-item-protection {
 	background: #fae0e1;
 	padding: 24px 28px;
 	border-radius: 12px;
-	height: 242px;
+	height: 290px;
+
 }
 .offerte-list-item-svg {
 	margin-bottom: 18px;
@@ -894,8 +896,8 @@ button {
 		font-size: 16px;
 	}
 	.nav-logo:hover,
-	.nav-logo:focus{
-		text-shadow: 2px 1px 7px rgba(0,0,0,0.6);
+	.nav-logo:focus {
+		text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
 		scale: 1.2;
 		transition: scale var(--animation-time-transition);
 	}
@@ -927,40 +929,171 @@ button {
 		color: var(--color-primary-black);
 		padding: 8px 16px;
 	}
-	
+
 	.nav-list-menu-link:hover,
-	.nav-list-menu-link:focus{
+	.nav-list-menu-link:focus {
 		border-radius: 8px;
 		background-color: var(--color-primary-black);
 		color: var(--color-primary-white);
 		padding: 8px 16px;
 		transition: background var(--animation-time-transition);
 	}
-	.nav-list-item-language{
+	.nav-list-item-language {
 		display: block;
 		background-color: transparent;
 		border: none;
 	}
 
-
 	.hero {
 		padding-top: 35px;
 		padding-bottom: 32px;
 	}
-	
+
 	.hero-furniture-description {
 		font-size: 14px;
 	}
 
-	.hero-furniture-description-span{
+	.hero-furniture-description-span {
 		display: inline;
 	}
 
-	.hero-block-container{
+	.hero-block-container {
 		display: flex;
 	}
-/* swiper */
+	/* swiper */
 
+	/*  */
+	.beschrijving-section {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
 
+	.beschrijving-container {
+		max-width: 710px;
+	}
+	.beschrijving-title {
+		font-size: 42px;
+	}
+	.beschrijving-text {
+		font-size: 20px;
+		display: block;
+		margin-bottom: 0;
+	}
+	.beschrijving-button {
+		display: none;
+	}
 
+	/*  */
+	.eigenschappen-title {
+		font-size: 42px;
+	}
+	.eigenschappen-list {
+		flex-direction: row;
+	}
+	.eigenschappen-text {
+		width: 278px;
+	}
+	.eigenschappen-list-item {
+		gap: 12px;
+		flex-wrap: nowrap;
+	}
+	.eigenschappen-list-item-block {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+	}
+	.eigenschappen-text-specification {
+		max-width: 340px;
+	}
+
+	/*  */
+	.proposition-section {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+
+	.proposition-img-container {
+		background-image: image-set(
+			url("../images/proposition/proposition-desctop-1x.jpg") 1x,
+			url("../images/proposition/proposition-desctop-2x.jpg") 2x
+		);
+	}
+
+	.proposition-introduction-text {
+		font-size: 20px;
+		line-height: 142%;
+	}
+
+	.proposition-introduction-title {
+		font-size: 32px;
+		line-height: 128%;
+	}
+
+	.proposition-introduction-btn {
+		width: 224px;
+	}
+	.proposition-title {
+		font-size: 62px;
+		line-height: 116%;
+		margin-bottom: 50px;
+		max-width: 1075px;
+	}
+	.proposition-block {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.proposition-block-btn {
+		width: 50%;
+		display: flex;
+	}
+	.proposition-block-picture {
+		width: 50%;
+	}
+	.proposition-img {
+	}
+	.proposition-container {
+		max-width: 368px;
+		margin-bottom: 78px;
+	}
+
+	.proposition-text {
+		font-size: 28px;
+		line-height: 129%;
+	}
+	.proposition-learn-more {
+		padding: 16px 12px 16px 20px;
+		width: 257px;
+		height: 50px;
+
+	}
+	.advertising-section {
+		display: none;
+	}
+
+.offerte {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+	.offerte-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); 
+		gap: 20px; 
+	}
+	
+	.offerte-container,
+	.offerte-list-item-car,
+	.offerte-list-item-box,
+	.offerte-list-item-protection {
+		width: 100%; 
+		height: 336px;
+	}
+
+	.offerte-container-title{
+		max-width: 507px;
+	}
+	.offerte-list-item-text{
+		max-width: 480px;
+
+	}
 }
