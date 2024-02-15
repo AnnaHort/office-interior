@@ -134,6 +134,10 @@ button {
 }
 .nav-list-item {
 }
+.nav-list-btn{
+	background-color: transparent;
+	border: none;
+}
 .nav-list-svg {
 }
 
@@ -538,6 +542,8 @@ button {
 }
 .proposition-img {
 	margin-bottom: 24px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .proposition-text {
 	font-family: "Avenir Next Regular";
