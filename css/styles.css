@@ -1242,4 +1242,15 @@ button {
 	.about-us-info-title {
 		margin-bottom: 16px;
 	}
+	.footer-section{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.pay-list-item-img{
+		width: 46px;
+	}
+	.social-media-list{
+		gap: 20px;
+	}
 }
