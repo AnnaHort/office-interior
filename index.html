@@ -535,8 +535,11 @@
 			</section>
 
 			<section class="about-us container">
-				<h3 class="about-us-title">OFFICE-INTERIOR</h3>
 
+				<a href="#" class="about-us-title">OFFICE-INTERIOR</a>
+
+				<div class="about-us-block-container">
+					
 				<div class="about-us-info-container">
 					<h4 class="about-us-info-title">Niewsbrief</h4>
 					<p class="about-us-info-text"
@@ -544,7 +547,7 @@
 					>
 
 					<div class="about-us-input-container">
-						<input type="text" class="about-us-info-mail" placeholder="Enter your email" />
+						<input type="text" class="about-us-info-mail" placeholder="Je e-mailadres" />
 						<button class="about-us-info-mail-btn">
 							<svg class="about-us-info-mail-svg" width="32" height="32">
 								<use href="./images/sprite.svg#send-mail-arrow"></use>
@@ -553,47 +556,115 @@
 					</div>
 				</div>
 
-				<ul class="category-list">
-					<li class="category-list-item">
-						<p class="category-list-item-text">Categorieën</p>
-						<svg class="category-list-item-svg" width="12" height="7">
-							<use href="./images/sprite.svg#arrow-acordeon"></use>
-						</svg>
-					</li>
-					<li class="category-list-item">
-						<p class="category-list-item-text">Over</p>
-						<svg class="category-list-item-svg" width="12" height="7">
-							<use href="./images/sprite.svg#arrow-acordeon"></use>
-						</svg>
-					</li>
-					<li class="category-list-item">
-						<p class="category-list-item-text">Info</p>
-						<svg class="category-list-item-svg" width="12" height="7">
-							<use href="./images/sprite.svg#arrow-acordeon"></use>
-						</svg>
-					</li>
-				</ul>
 
-				<ul class="contacts-list">
-					<li class="contacts-list-item">
-						<svg class="contacts-list-item-svg" width="22" height="22">
-							<use href="./images/sprite.svg#phone"></use>
-						</svg>
-						<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
-					</li>
-					<li class="contacts-list-item">
-						<svg class="contacts-list-item-svg" width="24" height="24">
-							<use href="./images/sprite.svg#letter"></use>
-						</svg>
-						<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
-					</li>
-					<li class="contacts-list-item">
-						<svg class="contacts-list-item-svg" width="24" height="24">
-							<use href="./images/sprite.svg#map"></use>
-						</svg>
-						<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
-					</li>
-				</ul>
+				<div class="category-list-container">
+					<ul class="category-list">
+						<li class="category-list-item">
+			
+							<select class="category-list-item-select" id="category">
+								<option value="">Categorieën</option>
+								<option value="kantoormeubelen">Kantoormeubelen</option>
+								<option value="thuiswerkplek">Thuiswerkplek</option>
+								<option value="kantoorinrichting">Kantoorinrichting</option>
+								<option value="sale">Sale</option>
+
+							</select>
+						</li>
+						<li class="category-list-item">
+							<select class="category-list-item-select"  id="over">
+								<option value="">Over</option>
+								<option value="over-ons">Over ons</option>
+								<option value="veel-gestelde-vragen">Veel gestelde vragen</option>
+								<option value="contact">Contact</option>
+								<option value="beoordelingen">Beoordelingen</option>
+								<option value="privacybeleid">Privacybeleid</option>
+								<option value="algemene-voorwaarden">Algemene voorwaarden</option>
+								<option value="cookie-policy">Cookie Policy</option>
+							</select>
+						</li>
+						<li class="category-list-item">
+							<select class="category-list-item-select">
+								<option value="Info">Info</option>
+							</select>
+						</li>
+					</ul>
+
+					<ul class="category-desctop-list">
+						<li class="category-desctop-list-item">
+							<h3 class="category-title">Categorieën</h3>
+							<ul class="desctop-category-list">
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Kantoormeubelen</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Thuiswerkplek</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Kantoorinrichting</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Sale</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category-desctop-list-item">
+							<h3 class="category-title">Over</h3>
+							<ul class="desctop-category-list">
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Over ons</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Veel gestelde vragen</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Contact</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Beoordelingen</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Privacybeleid</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Algemene voorwaarden</a>
+								</li>
+								<li class="desctop-category-list-item">
+									<a href="#" class="desctop-category-list-item-text">Cookie Policy</a>
+								</li>
+							</ul>
+
+						</li>
+					</ul>
+
+				
+	
+					<ul class="contacts-list">
+						<h3 class="contacts-list-title">Info</h3>
+						
+						<li class="contacts-list-item">
+							<svg class="contacts-list-item-svg" width="22" height="22">
+								<use href="./images/sprite.svg#phone"></use>
+							</svg>
+							<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
+						</li>
+						<li class="contacts-list-item">
+							<svg class="contacts-list-item-svg" width="24" height="24">
+								<use href="./images/sprite.svg#letter"></use>
+							</svg>
+							<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
+						</li>
+						<li class="contacts-list-item">
+							<svg class="contacts-list-item-svg" width="24" height="24">
+								<use href="./images/sprite.svg#map"></use>
+							</svg>
+							<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+
+
+
 			</section>
 		</main>
 		<footer class="footer container">
