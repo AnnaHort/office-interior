@@ -741,7 +741,7 @@ a {
 	background: #dbece0;
 	padding: 24px 28px;
 	border-radius: 12px;
-	height: 290px;
+	min-height: 290px;
 }
 .offerte-list-item-protection {
 	background: #fae0e1;
