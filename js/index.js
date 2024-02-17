@@ -8,15 +8,9 @@ new Swiper(".swiper", {
 
 	thumbs: {
 		swiper: {
-			direction: 'vertical',
-			el: '.image-mini-slider',
-
+			direction: "vertical",
+			el: ".image-mini-slider",
 			slidesPerView: 3,
-			navigation: {
-				nextEl: ".swiper-button-next-mini",
-				prevEl: ".swiper-button-prev-mini",
-			},
-
-		}
-	}
+		},
+	},
 });

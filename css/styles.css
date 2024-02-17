@@ -235,13 +235,6 @@ a {
 	opacity: 0.4;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-prev:focus,
-.swiper-button-next:hover,
-.swiper-button-next:focus {
-	scale: 1.2;
-	transition: scale var(--animation-time-transition);
-}
 
 /* mini swiper */
 
