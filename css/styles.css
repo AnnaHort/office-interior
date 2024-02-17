@@ -153,7 +153,13 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 16px;
+
+
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
 }
 
 .nav-list-item-language {
@@ -1380,5 +1386,9 @@ a {
 	.swiper-slide-thumb-active {
 		border: 2px solid #dedede;
 		border-radius: 4px;
+	}
+	.nav-list{
+		display: flex;
+		gap: 16px;
 	}
 }
