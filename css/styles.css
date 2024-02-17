@@ -996,6 +996,7 @@ a {
 	.nav-list-menu {
 		display: flex;
 		gap: 16px;
+		align-items: center;
 	}
 
 	.nav-list-menu-select {
@@ -1365,7 +1366,7 @@ a {
 
 	.swiper-button-next::after {
 		rotate: 90deg;
-		padding: 14px 18px;
+		padding: 13px 18px;
 	}
 	.swiper-wrapper {
 		position: inherit;
