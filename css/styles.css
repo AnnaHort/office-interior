@@ -145,6 +145,10 @@ a {
 	display: none;
 }
 
+.nav-list-menu-el{
+	display: block;
+}
+
 .nav-list {
 	display: flex;
 	justify-content: center;
@@ -914,6 +918,7 @@ a {
 
 .contacts-list-title {
 	display: none;
+	margin-bottom: 16px;
 }
 .contacts-list-item {
 	display: flex;

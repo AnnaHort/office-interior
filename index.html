@@ -54,9 +54,12 @@
 				<a href="#" class="nav-logo">OFFICE-INTERIOR</a>
 
 				<ul class="nav-list-menu">
-					<select class="nav-list-menu-select">
-						<option value="kantoormeubelen">Kantoormeubelen</option>
-					</select>
+					<li class="nav-list-menu-el">
+						<select class="nav-list-menu-select">
+							<option value="kantoormeubelen">Kantoormeubelen</option>
+						</select>
+					</li>
+
 					<li class="nav-list-menu-el">
 						<a href="#" class="nav-list-menu-link">Thuiswerkplek</a>
 					</li>
@@ -176,7 +179,7 @@
 					</div>
 
 					<!-- Slider main container -->
-					<div class="swiper" thumbs-swiper=".my-thumbs">
+					<div class="swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<picture>
@@ -305,7 +308,7 @@
 								<svg class="basket-btn-svg" width="24" height="24">
 									<use href="./images/sprite.svg#basket"></use>
 								</svg>
-								<p class="basket-btn-text">In winkelwagen</p>
+								In winkelwagen
 							</button>
 							<button class="favorite-btn">
 								<svg class="basket-btn-svg" width="24" height="24">
@@ -366,67 +369,71 @@
 				<div class="eigenschappen-container">
 					<h3 class="eigenschappen-title">Eigenschappen</h3>
 					<ul class="eigenschappen-list">
-						<div class="eigenschappen-list-item-block">
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Hoogte frame:</p>
-								<span class="eigenschappen-text-specification">72-117 cm</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Breedte:</p>
-								<span class="eigenschappen-text-specification">120-180 cm</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Diepte:</p>
-								<span class="eigenschappen-text-specification">80 cm</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Memory:</p>
-								<span class="eigenschappen-text-specification">3 standen</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Kleuren blad leverbaar:</p>
-								<span class="eigenschappen-text-specification"
-									>Midden eiken, bruin eiken, havanna, wit, lichtgrijs, robuust eiken</span
-								>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Frame kleuren leverbaar:</p>
-								<span class="eigenschappen-text-specification">Aluminium, zwart, wit</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Verstelbaarheid:</p>
-								<span class="eigenschappen-text-specification">Elektrisch verstelbaar</span>
-							</li>
-						</div>
+						<li>
+							<ul class="eigenschappen-list-item-block">
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Hoogte frame:</p>
+									<span class="eigenschappen-text-specification">72-117 cm</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Breedte:</p>
+									<span class="eigenschappen-text-specification">120-180 cm</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Diepte:</p>
+									<span class="eigenschappen-text-specification">80 cm</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Memory:</p>
+									<span class="eigenschappen-text-specification">3 standen</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Kleuren blad leverbaar:</p>
+									<span class="eigenschappen-text-specification"
+										>Midden eiken, bruin eiken, havanna, wit, lichtgrijs, robuust eiken</span
+									>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Frame kleuren leverbaar:</p>
+									<span class="eigenschappen-text-specification">Aluminium, zwart, wit</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Verstelbaarheid:</p>
+									<span class="eigenschappen-text-specification">Elektrisch verstelbaar</span>
+								</li>
+							</ul>
+						</li>
 
-						<div class="eigenschappen-list-item-block">
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Model:</p>
-								<span class="eigenschappen-text-specification">Recht</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Type poot</p>
-								<span class="eigenschappen-text-specification">T-poot</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Bladdikte:</p>
-								<span class="eigenschappen-text-specification">25 mm</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Bladafwerking:</p>
-								<span class="eigenschappen-text-specification"
-									>Gelamineerd spaanplaat, afgewerkt met kunststof stootrand</span
-								>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Draagvermogen:</p>
-								<span class="eigenschappen-text-specification">100 KG</span>
-							</li>
-							<li class="eigenschappen-list-item">
-								<p class="eigenschappen-text">Extra eigenschap:</p>
-								<span class="eigenschappen-text-specification">Snelle stille motor</span>
-							</li>
-						</div>
+						<li>
+							<ul class="eigenschappen-list-item-block">
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Model:</p>
+									<span class="eigenschappen-text-specification">Recht</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Type poot</p>
+									<span class="eigenschappen-text-specification">T-poot</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Bladdikte:</p>
+									<span class="eigenschappen-text-specification">25 mm</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Bladafwerking:</p>
+									<span class="eigenschappen-text-specification"
+										>Gelamineerd spaanplaat, afgewerkt met kunststof stootrand</span
+									>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Draagvermogen:</p>
+									<span class="eigenschappen-text-specification">100 KG</span>
+								</li>
+								<li class="eigenschappen-list-item">
+									<p class="eigenschappen-text">Extra eigenschap:</p>
+									<span class="eigenschappen-text-specification">Snelle stille motor</span>
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -732,28 +739,29 @@
 							</li>
 						</ul>
 
-						<ul class="contacts-list">
+						<div class="contacts-list-container">
 							<h3 class="contacts-list-title">Info</h3>
-
-							<li class="contacts-list-item">
-								<svg class="contacts-list-item-svg" width="22" height="22">
-									<use href="./images/sprite.svg#phone"></use>
-								</svg>
-								<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
-							</li>
-							<li class="contacts-list-item">
-								<svg class="contacts-list-item-svg" width="24" height="24">
-									<use href="./images/sprite.svg#letter"></use>
-								</svg>
-								<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
-							</li>
-							<li class="contacts-list-item">
-								<svg class="contacts-list-item-svg" width="24" height="24">
-									<use href="./images/sprite.svg#map"></use>
-								</svg>
-								<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
-							</li>
-						</ul>
+							<ul class="contacts-list">
+								<li class="contacts-list-item">
+									<svg class="contacts-list-item-svg" width="22" height="22">
+										<use href="./images/sprite.svg#phone"></use>
+									</svg>
+									<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
+								</li>
+								<li class="contacts-list-item">
+									<svg class="contacts-list-item-svg" width="24" height="24">
+										<use href="./images/sprite.svg#letter"></use>
+									</svg>
+									<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
+								</li>
+								<li class="contacts-list-item">
+									<svg class="contacts-list-item-svg" width="24" height="24">
+										<use href="./images/sprite.svg#map"></use>
+									</svg>
+									<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
