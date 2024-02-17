@@ -6,18 +6,17 @@ new Swiper(".swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 
-	// включення/відключення перемикання слайду захватом картинки на пк
-	simulateTouch: true,
+	thumbs: {
+		swiper: {
+			direction: 'vertical',
+			el: '.image-mini-slider',
 
-	// чутливість свайпу
-	touchRatio: 1,
+			slidesPerView: 3,
+			navigation: {
+				nextEl: ".swiper-button-next-mini",
+				prevEl: ".swiper-button-prev-mini",
+			},
 
-	// кут зпрацьовування свайпу/перетягування
-	touchAngle: 45,
-
-	// курсор перетягування
-	grabCursor: true,
-
-	// перемикання при кліку на слайд
-	slideToClickedSlide: true,
+		}
+	}
 });

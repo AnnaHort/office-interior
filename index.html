@@ -125,8 +125,41 @@
 				>
 
 				<div class="hero-block-container">
+					<!-- swiper for desktop version (thumbs) -->
+					<div class="image-mini-slider swiper-container my-thumbs">
+						<div class="image-mini-slider__wrapper swiper-wrapper">
+
+							<div class="image-mini-slider__slide swiper-slide">
+								<div class="image-mini-slider__image">
+									<img src="./images/furniture/table-1x.png" alt="mini furniture card" class="slider__image" />
+								</div>
+							</div>
+
+							<div class="image-mini-slider__slide swiper-slide">
+								<div class="image-mini-slider__image">
+									<img
+										src="./images/furniture/table-mini-horizontal-1x.png"
+										alt="mini furniture card"
+										class="slider__image"
+									/>
+								</div>
+							</div>
+
+							<div class="image-mini-slider__slide swiper-slide">
+								<div class="image-mini-slider__image">
+									<img
+										src="./images/furniture/table-mini-ditales-1x.png"
+										alt="mini furniture card"
+										class="slider__image"
+									/>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
 					<!-- Slider main container -->
-					<div class="swiper thumbs">
+					<div class="swiper" thumbs-swiper=".my-thumbs">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<picture>
@@ -148,7 +181,6 @@
 							</div>
 						</div>
 
-						<!-- If we need navigation buttons -->
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
 					</div>
@@ -395,24 +427,53 @@
 						Complete kantooroplossingen door ervaren projectmanagers.</h3
 					>
 					<div class="proposition-block">
+						<div class="picture-block">
+							<picture class="proposition-block-picture">
+								<source
+									media="(max-width: 1439px)"
+									srcset="
+										./images/proposition/white-chair-mob-1x.jpg 1x,
+										./images/proposition/white-chair-mob-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 1440px)"
+									srcset="
+										./images/proposition/white-chair-desctop-1x.jpg 1x,
+										./images/proposition/white-chair-desctop-2x.jpg 2x
+									"
+								/>
 
-<div class="picture-block">
-	<picture class="proposition-block-picture">
-		<source media="(max-width: 1439px)" srcset="./images/proposition/white-chair-mob-1x.jpg 1x, ./images/proposition/white-chair-mob-2x.jpg 2x" />
-		<source media="(min-width: 1440px)" srcset="./images/proposition/white-chair-desctop-1x.jpg 1x, ./images/proposition/white-chair-desctop-2x.jpg 2x" />
+								<img
+									src="./images/proposition/white-chair-mob-1x.jpg"
+									alt="office chairs"
+									class="proposition-img white-chair"
+								/>
+							</picture>
 
-		<img src="./images/proposition/white-chair-mob-1x.jpg" alt="office chairs" class="proposition-img white-chair" />
-	</picture>
+							<picture class="proposition-block-picture">
+								<source
+									media="(max-width: 1439px)"
+									srcset="
+										./images/proposition/black-chair-mob-1x.jpg 1x,
+										./images/proposition/black-chair-mob-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 1440px)"
+									srcset="
+										./images/proposition/black-chair-desctop-1x.jpg 1x,
+										./images/proposition/black-chair-desctop-2x.jpg 2x
+									"
+								/>
 
-	<picture class="proposition-block-picture">
-		<source media="(max-width: 1439px)" srcset="./images/proposition/black-chair-mob-1x.jpg 1x, ./images/proposition/black-chair-mob-2x.jpg 2x" />
-		<source media="(min-width: 1440px)" srcset="./images/proposition/black-chair-desctop-1x.jpg 1x, ./images/proposition/black-chair-desctop-2x.jpg 2x" />
-
-		<img src="./images/proposition/black-chair-mob-1x.jpg" alt="office chairs" class="proposition-img black-chair" />
-	</picture>
-</div>
-
-
+								<img
+									src="./images/proposition/black-chair-mob-1x.jpg"
+									alt="office chairs"
+									class="proposition-img black-chair"
+								/>
+							</picture>
+						</div>
 
 						<div class="proposition-block-btn">
 							<div class="proposition-container">
@@ -424,7 +485,6 @@
 									</svg>
 								</button>
 							</div>
-			
 						</div>
 					</div>
 				</div>
@@ -443,19 +503,17 @@
 
 			<section class="offerte container">
 				<ul class="offerte-list">
-
 					<li class="offerte-container">
 						<svg class="offerte-container-svg" width="48" height="48">
 							<use href="./images/sprite.svg#info"></use>
 						</svg>
-						
+
 						<h3 class="offerte-container-title">Informatie of een offerte op maat</h3>
 						<p class="offerte-container-text"
 							>Wilt u informatie over de tafel of de prijs voor uw organisatie? Laat je gegevens achter en onze manager
 							belt je terug. We helpen je graag verder.</p
 						>
 						<button class="offerte-container-btn">Verzoek achterlaten</button>
-						
 					</li>
 
 					<li class="offerte-list-item-car">
@@ -501,13 +559,21 @@
 						<div class="swiper-slide partners-slide">
 							<picture>
 								<source srcset="./images/partners/kadaster-1x.jpg 1x, ./images/partners/kadaster-2x.jpg 2x" />
-								<img src="./images/partners/kadaster-1x.jpg" alt="kadaster company" class="our-partners-img our-partners-img-kadaster" />
+								<img
+									src="./images/partners/kadaster-1x.jpg"
+									alt="kadaster company"
+									class="our-partners-img our-partners-img-kadaster"
+								/>
 							</picture>
 						</div>
 						<div class="swiper-slide partners-slide">
 							<picture>
 								<source srcset="./images/partners/katoen-1x.jpg 1x, ./images/partners/katoen-2x.jpg 2x" />
-								<img src="./images/partners/katoen-1x.jpg" alt="katoen company" class="our-partners-img our-partners-img-katoen" />
+								<img
+									src="./images/partners/katoen-1x.jpg"
+									alt="katoen company"
+									class="our-partners-img our-partners-img-katoen"
+								/>
 							</picture>
 						</div>
 						<div class="swiper-slide partners-slide">
@@ -541,232 +607,270 @@
 						<div class="swiper-slide partners-slide">
 							<picture>
 								<source srcset="./images/partners/shv-energy-1x.jpg 1x, ./images/partners/shv-energy-2x.jpg 2x" />
-								<img src="./images/partners/shv-energy-1x.jpg" alt="shv company" class="our-partners-img our-partners-img-shv" />
+								<img
+									src="./images/partners/shv-energy-1x.jpg"
+									alt="shv company"
+									class="our-partners-img our-partners-img-shv"
+								/>
 							</picture>
 						</div>
 					</div>
 				</div>
 			</section>
-
-
 		</main>
 		<footer class="footer container">
 			<section class="about-us">
-
 				<a href="#" class="about-us-title">OFFICE-INTERIOR</a>
 
 				<div class="about-us-block-container">
-					
-				<div class="about-us-info-container">
-					<h4 class="about-us-info-title">Niewsbrief</h4>
-					<p class="about-us-info-text"
-						>Schrijf u nu in voor de nieuwsbrief voor exclusieve informatie die u niet wil missen!</p
-					>
+					<div class="about-us-info-container">
+						<h4 class="about-us-info-title">Niewsbrief</h4>
+						<p class="about-us-info-text"
+							>Schrijf u nu in voor de nieuwsbrief voor exclusieve informatie die u niet wil missen!</p
+						>
 
-					<div class="about-us-input-container">
-						<input type="text" class="about-us-info-mail" placeholder="Je e-mailadres" />
-						<button class="about-us-info-mail-btn">
-							<svg class="about-us-info-mail-svg" width="32" height="32">
-								<use href="./images/sprite.svg#send-mail-arrow"></use>
-							</svg>
-						</button>
+						<div class="about-us-input-container">
+							<input type="text" class="about-us-info-mail" placeholder="Je e-mailadres" />
+							<button class="about-us-info-mail-btn">
+								<svg class="about-us-info-mail-svg" width="32" height="32">
+									<use href="./images/sprite.svg#send-mail-arrow"></use>
+								</svg>
+							</button>
+						</div>
 					</div>
-				</div>
 
+					<div class="category-list-container">
+						<ul class="category-list">
+							<li class="category-list-item">
+								<select class="category-list-item-select" id="category">
+									<option value="">Categorieën</option>
+									<option value="kantoormeubelen">Kantoormeubelen</option>
+									<option value="thuiswerkplek">Thuiswerkplek</option>
+									<option value="kantoorinrichting">Kantoorinrichting</option>
+									<option value="sale">Sale</option>
+								</select>
+							</li>
+							<li class="category-list-item">
+								<select class="category-list-item-select" id="over">
+									<option value="">Over</option>
+									<option value="over-ons">Over ons</option>
+									<option value="veel-gestelde-vragen">Veel gestelde vragen</option>
+									<option value="contact">Contact</option>
+									<option value="beoordelingen">Beoordelingen</option>
+									<option value="privacybeleid">Privacybeleid</option>
+									<option value="algemene-voorwaarden">Algemene voorwaarden</option>
+									<option value="cookie-policy">Cookie Policy</option>
+								</select>
+							</li>
+							<li class="category-list-item">
+								<select class="category-list-item-select">
+									<option value="Info">Info</option>
+								</select>
+							</li>
+						</ul>
 
-				<div class="category-list-container">
-					<ul class="category-list">
-						<li class="category-list-item">
-			
-							<select class="category-list-item-select" id="category">
-								<option value="">Categorieën</option>
-								<option value="kantoormeubelen">Kantoormeubelen</option>
-								<option value="thuiswerkplek">Thuiswerkplek</option>
-								<option value="kantoorinrichting">Kantoorinrichting</option>
-								<option value="sale">Sale</option>
+						<ul class="category-desctop-list">
+							<li class="category-desctop-list-item">
+								<h3 class="category-title">Categorieën</h3>
+								<ul class="desctop-category-list">
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Kantoormeubelen</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Thuiswerkplek</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Kantoorinrichting</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Sale</a>
+									</li>
+								</ul>
+							</li>
+							<li class="category-desctop-list-item">
+								<h3 class="category-title">Over</h3>
+								<ul class="desctop-category-list">
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Over ons</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Veel gestelde vragen</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Contact</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Beoordelingen</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Privacybeleid</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Algemene voorwaarden</a>
+									</li>
+									<li class="desctop-category-list-item">
+										<a href="#" class="desctop-category-list-item-text">Cookie Policy</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 
-							</select>
-						</li>
-						<li class="category-list-item">
-							<select class="category-list-item-select"  id="over">
-								<option value="">Over</option>
-								<option value="over-ons">Over ons</option>
-								<option value="veel-gestelde-vragen">Veel gestelde vragen</option>
-								<option value="contact">Contact</option>
-								<option value="beoordelingen">Beoordelingen</option>
-								<option value="privacybeleid">Privacybeleid</option>
-								<option value="algemene-voorwaarden">Algemene voorwaarden</option>
-								<option value="cookie-policy">Cookie Policy</option>
-							</select>
-						</li>
-						<li class="category-list-item">
-							<select class="category-list-item-select">
-								<option value="Info">Info</option>
-							</select>
-						</li>
-					</ul>
+						<ul class="contacts-list">
+							<h3 class="contacts-list-title">Info</h3>
 
-					<ul class="category-desctop-list">
-						<li class="category-desctop-list-item">
-							<h3 class="category-title">Categorieën</h3>
-							<ul class="desctop-category-list">
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Kantoormeubelen</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Thuiswerkplek</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Kantoorinrichting</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Sale</a>
-								</li>
-							</ul>
-						</li>
-						<li class="category-desctop-list-item">
-							<h3 class="category-title">Over</h3>
-							<ul class="desctop-category-list">
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Over ons</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Veel gestelde vragen</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Contact</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Beoordelingen</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Privacybeleid</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Algemene voorwaarden</a>
-								</li>
-								<li class="desctop-category-list-item">
-									<a href="#" class="desctop-category-list-item-text">Cookie Policy</a>
-								</li>
-							</ul>
-
-						</li>
-					</ul>
-
-				
-	
-					<ul class="contacts-list">
-						<h3 class="contacts-list-title">Info</h3>
-						
-						<li class="contacts-list-item">
-							<svg class="contacts-list-item-svg" width="22" height="22">
-								<use href="./images/sprite.svg#phone"></use>
-							</svg>
-							<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
-						</li>
-						<li class="contacts-list-item">
-							<svg class="contacts-list-item-svg" width="24" height="24">
-								<use href="./images/sprite.svg#letter"></use>
-							</svg>
-							<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
-						</li>
-						<li class="contacts-list-item">
-							<svg class="contacts-list-item-svg" width="24" height="24">
-								<use href="./images/sprite.svg#map"></use>
-							</svg>
-							<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
-						</li>
-					</ul>
-				</div>
+							<li class="contacts-list-item">
+								<svg class="contacts-list-item-svg" width="22" height="22">
+									<use href="./images/sprite.svg#phone"></use>
+								</svg>
+								<a href="tel:+31(0)85-0481444" class="contacts-list-item-link">+31(0)85-0481444</a>
+							</li>
+							<li class="contacts-list-item">
+								<svg class="contacts-list-item-svg" width="24" height="24">
+									<use href="./images/sprite.svg#letter"></use>
+								</svg>
+								<a href="mailto:info@office-interior.nl" class="contacts-list-item-link">info@office-interior.nl</a>
+							</li>
+							<li class="contacts-list-item">
+								<svg class="contacts-list-item-svg" width="24" height="24">
+									<use href="./images/sprite.svg#map"></use>
+								</svg>
+								<a href="#" class="contacts-list-item-link">Nikkelstraat 284823AB Breda</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
-<section class="footer-section">
+			<section class="footer-section">
+				<ul class="social-media-list">
+					<li class="social-media-list-el">
+						<a href="https://www.instagram.com/" target="_blank">
+							<svg class="social-media-list-svg" width="24" height="24">
+								<use href="./images/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-media-list-el">
+						<a href="https://www.facebook.com/?locale=uk_UA" target="_blank">
+							<svg class="social-media-list-svg" width="24" height="24">
+								<use href="./images/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-media-list-el">
+						<a href="https://twitter.com/?lang=uk" target="_blank">
+							<svg class="social-media-list-svg" width="24" height="24">
+								<use href="./images/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 
-	<ul class="social-media-list">
-		<li class="social-media-list-el">
-			<svg class="social-media-list-svg" width="24" height="24">
-				<use href="./images/sprite.svg#instagram"></use>
-			</svg>
-		</li>
-		<li class="social-media-list-el">
-			<svg class="social-media-list-svg" width="24" height="24">
-				<use href="./images/sprite.svg#facebook"></use>
-			</svg>
-		</li>
-		<li class="social-media-list-el">
-			<svg class="social-media-list-svg" width="24" height="24">
-				<use href="./images/sprite.svg#twitter"></use>
-			</svg>
-		</li>
-	</ul>
+				<ul class="pay-list">
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/amex-1x.jpg 1x, ./images/payment/amex-2x.jpg 2x"
+							/>
 
-	<ul class="pay-list">
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/amex-1x.jpg 1x, ./images/payment/amex-2x.jpg 2x" />
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/amex-desctop-1x.jpg 1x, ./images/payment/amex-desctop-2x.jpg 2x"
+							/>
 
-				<source media="(min-width: 1440px)" srcset="./images/payment/amex-desctop-1x.jpg 1x, ./images/payment/amex-desctop-2x.jpg 2x" />
+							<img src="./images/payment/amex-1x.jpg" alt="amex payment" class="pay-list-item-img" />
+						</picture>
+					</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/ideal-1x.jpg 1x, ./images/payment/ideal-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/idea-desctop-1x.jpg 1x, ./images/payment/idea-desctop-2x.jpg 2x"
+							/>
+							<img src="./images/payment/ideal-1x.jpg" alt="ideal payment" class="pay-list-item-img" />
+						</picture>
+					</li>
 
-				<img src="./images/payment/amex-1x.jpg" alt="amex payment" class="pay-list-item-img" />
-			</picture>
-		</li>
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/ideal-1x.jpg 1x, ./images/payment/ideal-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/idea-desctop-1x.jpg 1x, ./images/payment/idea-desctop-2x.jpg 2x" />
-				<img src="./images/payment/ideal-1x.jpg" alt="ideal payment" class="pay-list-item-img" />
-			</picture>
-		</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/master-1x.jpg 1x, ./images/payment/master-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/master-desctop-1x.jpg 1x, ./images/payment/master-desctop-2x.jpg 2x"
+							/>
 
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/master-1x.jpg 1x, ./images/payment/master-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/master-desctop-1x.jpg 1x, ./images/payment/master-desctop-2x.jpg 2x" />
+							<img src="./images/payment/master-1x.jpg" alt="master payment" class="pay-list-item-img" />
+						</picture>
+					</li>
 
-				<img src="./images/payment/master-1x.jpg" alt="master payment" class="pay-list-item-img" />
-			</picture>
-		</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/mastercard-1x.jpg 1x, ./images/payment/mastercard-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/mastercard-desctop-1x.jpg 1x, ./images/payment/mastercard-desctop-2x.jpg 2x"
+							/>
 
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/mastercard-1x.jpg 1x, ./images/payment/mastercard-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/mastercard-desctop-1x.jpg 1x, ./images/payment/mastercard-desctop-2x.jpg 2x" />
+							<img src="./images/payment/mastercard-1x.jpg" alt="mastercard payment" class="pay-list-item-img" />
+						</picture>
+					</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/paypal-1x.jpg 1x, ./images/payment/paypal-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/paypall-desctop-1x.jpg 1x, ./images/payment/paypall-desctop-2x.jpg 2x"
+							/>
 
-				<img src="./images/payment/mastercard-1x.jpg" alt="mastercard payment" class="pay-list-item-img" />
-			</picture>
-		</li>
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/paypal-1x.jpg 1x, ./images/payment/paypal-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/paypall-desctop-1x.jpg 1x, ./images/payment/paypall-desctop-2x.jpg 2x" />
+							<img src="./images/payment/paypal-1x.jpg" alt="paypal payment" class="pay-list-item-img" />
+						</picture>
+					</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/unionpay-1x.jpg 1x, ./images/payment/unionpay-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/unionpay-desctop-1x.jpg 1x, ./images/payment/unionpay-desctop-2x.jpg 2x"
+							/>
 
-				<img src="./images/payment/paypal-1x.jpg" alt="paypal payment" class="pay-list-item-img" />
-			</picture>
-		</li>
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/unionpay-1x.jpg 1x, ./images/payment/unionpay-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/unionpay-desctop-1x.jpg 1x, ./images/payment/unionpay-desctop-2x.jpg 2x" />
-				
-				<img src="./images/payment/unionpay-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
-			</picture>
-		</li>
-		<li class="pay-list-item">
-			<picture class="pay-list-item-picture">
-				<source media="(max-width: 1439px)" srcset="./images/payment/visa-1x.jpg 1x, ./images/payment/visa-2x.jpg 2x" />
-				<source media="(min-width: 1440px)" srcset="./images/payment/visa-desctop-1x.jpg 1x, ./images/payment/visa-desctop-2x.jpg 2x" />
+							<img src="./images/payment/unionpay-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
+						</picture>
+					</li>
+					<li class="pay-list-item">
+						<picture class="pay-list-item-picture">
+							<source
+								media="(max-width: 1439px)"
+								srcset="./images/payment/visa-1x.jpg 1x, ./images/payment/visa-2x.jpg 2x"
+							/>
+							<source
+								media="(min-width: 1440px)"
+								srcset="./images/payment/visa-desctop-1x.jpg 1x, ./images/payment/visa-desctop-2x.jpg 2x"
+							/>
 
-				<img src="./images/payment/visa-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
-			</picture>
-		</li>
-	</ul>
+							<img src="./images/payment/visa-1x.jpg" alt="unionpay payment" class="pay-list-item-img" />
+						</picture>
+					</li>
+				</ul>
 
-	<p class="pay-list-text">&copy; <span class="copyright-year">2023</span> Office-Interior</p>
-
-</section>
-
-
+				<p class="pay-list-text">&copy; <span class="copyright-year">2023</span> Office-Interior</p>
+			</section>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script type="module" src="js/swiper-partners.js"></script>

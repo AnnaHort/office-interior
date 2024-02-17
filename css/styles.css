@@ -176,6 +176,9 @@ button {
 	padding-bottom: 18px;
 	background-color: var(--color-primary-gray);
 }
+
+/* swiper */
+
 .swiper {
 	margin-bottom: 20px;
 }
@@ -214,7 +217,13 @@ button {
 	opacity: 0.4;
 }
 
-/*  */
+/* mini swiper */
+
+.image-mini-slider {
+	display: none;
+}
+
+/* hero section */
 
 .hero-title {
 	font-family: "Avenir Next Demi";
@@ -247,7 +256,9 @@ button {
 
 .hero-furniture-img {
 }
-/*  */
+
+/* filter block */
+
 .filter-afmeting {
 	margin-bottom: 20px;
 }
@@ -285,7 +296,6 @@ button {
 .filter-frame-list-el {
 }
 
-/*  */
 .total-price-container {
 	display: flex;
 	align-items: center;
@@ -415,7 +425,6 @@ button {
 	color: var(--color-primary-black);
 }
 
-/*  */
 .prospects-container {
 }
 .prospects-list {
@@ -438,7 +447,6 @@ button {
 	color: var(--color-primary-black);
 }
 
-/*  */
 .beschrijving-section {
 	padding-top: 41px;
 	padding-bottom: 41px;
@@ -460,7 +468,7 @@ button {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 3; /* Кількість рядків, після яких буде виведено "..." */
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	margin-bottom: 14px;
 }
@@ -476,7 +484,6 @@ button {
 	margin-left: auto;
 }
 
-/*  */
 .eigenschappen-section {
 }
 .eigenschappen-container {
@@ -512,7 +519,6 @@ button {
 	color: #8c8c8c;
 }
 
-/*  */
 .proposition-section {
 	padding-top: 41px;
 	padding-bottom: 41px;
@@ -650,6 +656,7 @@ button {
 }
 
 /* offerte section */
+
 .offerte {
 	padding-top: 41px;
 	padding-bottom: 41px;
@@ -738,7 +745,6 @@ button {
 	line-height: 142%;
 }
 
-/*  */
 .partners {
 	padding-bottom: 41px;
 }
@@ -1032,7 +1038,12 @@ button {
 	.hero-block-container {
 		display: flex;
 	}
-	/* swiper */
+
+	.swiper-mini-button-prev {
+	}
+
+	.swiper-mini-button-next {
+	}
 
 	/*  */
 	.beschrijving-section {
@@ -1177,6 +1188,40 @@ button {
 	.offerte-list-item-text {
 		max-width: 480px;
 	}
+	/* mini-swiper thumbs */
+	.image-mini-slider {
+		display: block;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.image-mini-slider__slide {
+		height: 102px !important;
+		opacity: 0.2;
+		transform: opacity 0.3s ease 0s;
+	}
+	.image-mini-slider__slide:not(:last-child) {
+		margin-bottom: 18px;
+	}
+	.image-mini-slider__wrapper {
+		width: 102px;
+	}
+	.image-mini-slider__slide.swiper-slide-thumb-active {
+		opacity: 1;
+	}
+	.slider__image {
+		width: 102px;
+		height: 102px;
+	}
+	/* .swiper-button-prev__desktop {
+		display: none;
+	} */
+	/* .swiper-button-next__desktop {
+		display: none;
+	} */
+
+	.furniture-picture {
+		width: 576px;
+	}
 
 	/* swiper-partners */
 	.partners {
@@ -1296,5 +1341,36 @@ button {
 	}
 	.social-media-list {
 		gap: 20px;
+	}
+
+/* swiper */
+
+	.swiper-button-prev {
+		top: 180px!important;
+		left: 120px !important;
+
+	}
+	.swiper-button-next {
+		top: 564px!important;
+		left: 120px !important;
+
+	}
+	.swiper-button-prev::after {
+		rotate: 90deg;
+				padding: 14px 18px;
+	}
+
+	.swiper-button-next::after {
+		rotate: 90deg;
+				padding: 14px 18px;
+	}
+	.swiper-wrapper {
+		position: inherit;
+	}
+	.swiper {
+		position: inherit;
+	}
+	.hero {
+		position: relative;
 	}
 }
