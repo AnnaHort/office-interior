@@ -525,6 +525,11 @@ a {
 	background-color: transparent;
 	margin-left: auto;
 }
+.beschrijving-button:hover,
+.beschrijving-button:focus{
+	text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	transition: text-shadow var(--animation-time-transition);
+}
 
 .eigenschappen-title {
 	font-family: "Avenir Next Demi";
