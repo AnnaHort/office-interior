@@ -70,6 +70,10 @@ button {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+a {
+	display: block;
+}
+
 .container {
 	padding: 0 20px;
 	max-width: 1600px;
@@ -93,6 +97,7 @@ button {
 	line-height: 133%;
 	color: var(--color-primary-white);
 }
+
 .information-panel-rating {
 	min-width: 96px;
 }
@@ -110,6 +115,13 @@ button {
 	font-size: 15px;
 	line-height: 100%;
 	color: var(--color-primary-white);
+	text-decoration: none;
+}
+.information-panel-rating-text:hover,
+.information-panel-rating-text:focus {
+	text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	scale: 1.1;
+	transition: scale var(--animation-time-transition);
 }
 
 /* navigation */
@@ -158,6 +170,12 @@ button {
 	border: none;
 }
 .nav-list-svg {
+}
+
+.nav-list-svg:hover,
+.nav-list-svg:focus {
+	scale: 1.2;
+	transition: scale var(--animation-time-transition);
 }
 
 .hero-furniture-description {
@@ -217,6 +235,14 @@ button {
 	opacity: 0.4;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+	scale: 1.2;
+	transition: scale var(--animation-time-transition);
+}
+
 /* mini swiper */
 
 .image-mini-slider {
@@ -245,6 +271,11 @@ button {
 	border: none;
 	border-radius: 50%;
 }
+.hero-furniture-color-list-item-btn:hover,
+.hero-furniture-color-list-item-btn:focus {
+	scale: 1.2;
+	transition: scale var(--animation-time-transition);
+}
 
 .hero-furniture-color-list-item-white {
 	width: 32px;
@@ -252,6 +283,11 @@ button {
 	background-color: var(--color-primary-white);
 	border-radius: 50%;
 	border: none;
+}
+.hero-furniture-color-list-item-white:hover,
+.hero-furniture-color-list-item-white:focus {
+	scale: 1.2;
+	transition: scale var(--animation-time-transition);
 }
 
 .hero-furniture-img {
@@ -280,6 +316,13 @@ button {
 	line-height: 100%;
 	color: var(--color-primary-black);
 }
+
+.filter-btn:hover,
+.filter-btn:focus {
+	box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	transition: box-shadow var(--animation-time-transition);
+}
+
 .filter-frame {
 	margin-bottom: 30px;
 }
@@ -328,6 +371,15 @@ button {
 	justify-content: center;
 }
 
+.plus-quantity:hover,
+.plus-quantity:focus,
+.minus-quantity:hover,
+.minus-quantity:focus {
+	text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	scale: 1.5;
+	transition: scale var(--animation-time-transition);
+}
+
 .plus-quantity-svg {
 }
 
@@ -374,6 +426,22 @@ button {
 	padding: 10px 24px;
 	width: 283px;
 	height: 44px;
+}
+
+.basket-btn:hover,
+.basket-btn:focus,
+.favorite-btn:hover,
+.favorite-btn:focus,
+.proposal-btn:hover,
+.proposal-btn:focus,
+.proposition-introduction-btn:hover,
+.proposition-introduction-btn:focus,
+.proposition-learn-more:focus,
+.proposition-learn-more:hover,
+.offerte-container-btn:hover,
+.offerte-container-btn:focus {
+	box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	transition: box-shadow var(--animation-time-transition);
 }
 .basket-btn-svg {
 	fill: var(--color-primary-white);
@@ -853,6 +921,14 @@ button {
 	color: #2c2929;
 	font-family: "Avenir Next Medium";
 }
+
+.about-us-info-mail:hover,
+.about-us-info-mail:focus {
+	outline: none;
+	box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+	transition: box-shadow var(--animation-time-transition);
+}
+
 .about-us-info-mail-btn {
 	position: absolute;
 	top: 50%;
@@ -862,6 +938,13 @@ button {
 	background-color: transparent;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.about-us-info-mail-btn:focus,
+.about-us-info-mail-btn:hover {
+	background-color: var(--color-primary-black);
+	border-radius: 50%;
+	transition: background-color var(--animation-time-transition);
+}
+
 .about-us-info-mail-svg {
 	background-color: rgba(44, 41, 41, 0.24);
 	border-radius: 50%;
@@ -974,7 +1057,9 @@ button {
 		font-size: 16px;
 	}
 	.nav-logo:hover,
-	.nav-logo:focus {
+	.nav-logo:focus,
+	.social-media-list-svg:hover,
+	.social-media-list-svg:focus {
 		text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
 		scale: 1.2;
 		transition: scale var(--animation-time-transition);
@@ -995,6 +1080,13 @@ button {
 		font-size: 18px;
 		line-height: 100%;
 		color: var(--color-primary-black);
+	}
+	.nav-list-menu-select:hover,
+	.nav-list-menu-select:focus {
+		text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+		transition: text-shadow var(--animation-time-transition);
+		scale: 1.1;
+		transition: scale var(--animation-time-transition);
 	}
 
 	.nav-list-menu-el {
@@ -1020,6 +1112,14 @@ button {
 		display: block;
 		background-color: transparent;
 		border: none;
+	}
+
+	.nav-list-item-language:hover,
+	.nav-list-item-language:focus {
+		text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.6);
+		transition: text-shadow var(--animation-time-transition);
+		scale: 1.2;
+		transition: scale var(--animation-time-transition);
 	}
 
 	.hero {
@@ -1343,26 +1443,24 @@ button {
 		gap: 20px;
 	}
 
-/* swiper */
+	/* swiper */
 
 	.swiper-button-prev {
-		top: 180px!important;
+		top: 174px !important;
 		left: 120px !important;
-
 	}
 	.swiper-button-next {
-		top: 564px!important;
+		top: 580px !important;
 		left: 120px !important;
-
 	}
 	.swiper-button-prev::after {
 		rotate: 90deg;
-				padding: 14px 18px;
+		padding: 13px 18px;
 	}
 
 	.swiper-button-next::after {
 		rotate: 90deg;
-				padding: 14px 18px;
+		padding: 14px 18px;
 	}
 	.swiper-wrapper {
 		position: inherit;
@@ -1372,5 +1470,9 @@ button {
 	}
 	.hero {
 		position: relative;
+	}
+	.swiper-slide-thumb-active {
+		border: 2px solid #dedede;
+		border-radius: 4px;
 	}
 }

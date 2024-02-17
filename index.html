@@ -46,7 +46,7 @@
 						</svg>
 					</li>
 				</ul>
-				<p class="information-panel-rating-text">1599 reviews</p>
+				<a href="#" class="information-panel-rating-text">1599 reviews</a>
 			</div>
 		</section>
 		<header class="header">
@@ -128,34 +128,51 @@
 					<!-- swiper for desktop version (thumbs) -->
 					<div class="image-mini-slider swiper-container my-thumbs">
 						<div class="image-mini-slider__wrapper swiper-wrapper">
-
 							<div class="image-mini-slider__slide swiper-slide">
 								<div class="image-mini-slider__image">
-									<img src="./images/furniture/table-1x.png" alt="mini furniture card" class="slider__image" />
+									<picture>
+										<source srcset="./images/furniture/table-1x.png 1x, ./images/furniture/table-2x.png 2x" />
+										<img src="./images/furniture/table-1x.png" alt="mini furniture card" class="slider__image" />
+									</picture>
 								</div>
 							</div>
 
 							<div class="image-mini-slider__slide swiper-slide">
 								<div class="image-mini-slider__image">
-									<img
-										src="./images/furniture/table-mini-horizontal-1x.png"
-										alt="mini furniture card"
-										class="slider__image"
-									/>
+									<picture>
+										<source
+											srcset="
+												./images/furniture/table-mini-horizontal-1x.png 1x,
+												./images/furniture/table-mini-horizontal-2x.png 2x
+											"
+										/>
+										<img
+											src="./images/furniture/table-mini-horizontal-1x.png"
+											alt="mini furniture card"
+											class="slider__image"
+										/>
+									</picture>
 								</div>
 							</div>
 
 							<div class="image-mini-slider__slide swiper-slide">
 								<div class="image-mini-slider__image">
-									<img
-										src="./images/furniture/table-mini-ditales-1x.png"
-										alt="mini furniture card"
-										class="slider__image"
-									/>
+									<picture>
+										<source
+											srcset="
+												./images/furniture/table-mini-ditales-1x.png 1x,
+												./images/furniture/table-mini-ditales-2x.png 2x
+											"
+										/>
+										<img
+											src="./images/furniture/table-mini-ditales-1x.png"
+											alt="mini furniture card"
+											class="slider__image"
+										/>
+									</picture>
 								</div>
 							</div>
 						</div>
-
 					</div>
 
 					<!-- Slider main container -->
